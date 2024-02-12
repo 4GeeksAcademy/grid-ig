@@ -99,8 +99,9 @@
           role="tab" aria-controls="photo-tab-pane" aria-selected="false"><i class="fa-solid fa-square fa-lg" style="color: #8f8f8f;"></i></button>
       </li>
     </ul>
+
     <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-tab" tabindex="0">
+      <div class="tab-pane fade show active" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-tab" tabindex="0">
         <div class="row row-cols-md-3 g-2">
           <div class="col">
             <div class="card">
@@ -148,9 +149,10 @@
             </div>
           </div>
         </div>
-      
       </div>
-      <div class="tab-pane fade show active d-flex justify-content-center align-items-start" id="photo-tab-pane" role="tabpanel" aria-labelledby="photo-tab" tabindex="0">
+  
+      
+      <div class="tab-pane fade d-flex justify-content-center align-items-start" id="photo-tab-pane" role="tabpanel" aria-labelledby="photo-tab" tabindex="0">
         <div class="d-flex flex-column">
             <div class="card mb-3" style="max-width: 540px;">
               <div class="card-header">
@@ -251,6 +253,9 @@
                 </div>
             </div>
         </div>
+      </div>
+    </div>
+    </div>
   <script>
     function clearTextArea() {
       document.getElementById("message-text").value = "";

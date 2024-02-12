@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/35b0e7e7d5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>instagram</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-between">
+        <div class="col">
+          <div class="navbar">
+            <nav class="navbar">
+              <div class="container-fluid">
+                <img src="https://i.pinimg.com/originals/7f/7b/87/7f7b872e56430e68d69538b17525c51c.png" alt="Logo"
+                  width="30" height="30" class="d-inline-block align-text-top me-2">
+                <b>Instagram</b>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#Modal">
+            create a new post
+          </button>
+          <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="ModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">
+                        <h6>Caption</h6>
+                      </label>
+                      <textarea class="form-control" id="message-text" onfocus="clearTextArea()">Add your caption of your post here</textarea class="d-inline-block align-text-top me-2">                 
+                    </div>
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-ligth" type="button">
+                        <i class="fa-solid fa-camera"></i>
+                      </button>
+                      <button class="btn btn-light" type="button">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                      
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+        <div class="col-auto">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility </a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="tab">
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-tab-pane" type="button"
+          role="tab" aria-controls="grid-tab-pane" aria-selected="false"><i class="fa-solid fa-table-cells fa-lg" style="color: #8f8f8f;"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="photo-tab" data-bs-toggle="tab" data-bs-target="#photo-tab-pane" type="button"
+          role="tab" aria-controls="photo-tab-pane" aria-selected="false"><i class="fa-solid fa-square fa-lg" style="color: #8f8f8f;"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-tab" tabindex="0">
+        <div class="row row-cols-md-3 g-2">
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg" class="card-img-top" alt="img1">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2024/01/22/17/00/mandarin-ducks-8525827_960_720.jpg" class="card-img-top" alt="img2">
+              </div>
+            </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2020/04/04/03/07/lake-5000642_960_720.jpg" class="card-img-top" alt="img3">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2023/11/05/11/04/gull-8366802_960_720.jpg" class="card-img-top" alt="img4">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2023/11/13/03/07/pond-8384421_960_720.jpg" class="card-img-top" alt="img5">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2023/08/17/09/29/rock-8196075_1280.jpg" class="card-img-top" alt="img6">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_960_720.jpg" class="card-img-top img-fluid" alt="img7">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_960_720.jpg" class="card-img-top" alt="img8">
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdn.pixabay.com/photo/2014/09/10/00/59/mountains-440520_960_720.jpg" class="card-img-top img-fluid" alt="img9">
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div class="tab-pane fade show active d-flex justify-content-center align-items-start" id="photo-tab-pane" role="tabpanel" aria-labelledby="photo-tab" tabindex="0">
+        <div class="d-flex flex-column">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="card-header">
+                  <p class="card-text"><b>@vero.arias4</b> <span class="text-muted float-end">04/10</span></p>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg" class="card-img-top" alt="img1" >
+                <div class="card-body">
+                    <p>liked by <b>4Geeksacademy, valeriaasalcedoo </b> and <b>100,000 others</b></p>
+                    <p class="card-text"> Encuentra lo que amas y deja que te mate.</p>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="card-header">
+                  <p class="card-text"><b>@danaeljeaid</b> <span class="text-muted float-end">03/06</span></p>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2024/01/22/17/00/mandarin-ducks-8525827_960_720.jpg" class="card-img-top" alt="img2">
+                <div class="card-body">
+                    <p>liked by <b>4Geeksacademy, valeriaasalcedoo </b> and <b>100,000 others</b></p>
+                    <p class="card-text">No dejes que tu pasado ocupe todo tu presente.</p>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="card-header">
+                  <p class="card-text"><b>@chiquichiquitica</b> <span class="text-muted float-end">18/06</span></p>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2020/04/04/03/07/lake-5000642_960_720.jpg" class="card-img-top" alt="img3">
+                <div class="card-body">
+                    <p>liked by <b>4Geeksacademy, valeriaasalcedoo </b> and <b>100,000 others</b></p>
+                    <p class="card-text">Quien pisa fuerte deja huella.</p>
+                </div>
+            </div>  
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="card-header">
+                  <p class="card-text"><b>@_danielarodriguezs</b> <span class="text-muted float-end">09/10</span></p>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2023/11/05/11/04/gull-8366802_960_720.jpg" class="card-img-top" alt="img4">
+                <div class="card-body">
+                    <p>liked by <b>4Geeksacademy, valeriaasalcedoo </b> and <b>100,000 others</b></p>
+                    <p class="card-text">Sonríe y deja que el resto del mundo se pregunte por qué.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="card-header">
+                  <p class="card-text"><b>@callmepooll</b> <span class="text-muted float-end">13/02</span></p>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2023/11/13/03/07/pond-8384421_960_720.jpg" class="card-img-top" alt="img5">
+                <div class="card-body">
+                    <p>liked by <b>4Geeksacademy, valeriaasalcedoo </b> and <b>100,000 others</b></p>
+                    <p class="card-text">Escápate de lo ordinario.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="card-header">
+                  <p class="card-text"><b>@03tilnfinity</b> <span class="text-muted float-end">01/11</span></p>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2023/08/17/09/29/rock-8196075_1280.jpg" class="card-img-top" alt="img6">
+                <div class="card-body">
+                    <p>liked by <b>4Geeksacademy, valeriaasalcedoo </b> and <b>100,000 others</b></p>
+                    <p class="card-text">Vive, luce, sueña, viaja. Repite.</p>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="card-header">
+                  <p class="card-text"><b>@yorchzzz__</b> <span class="text-muted float-end">10/11</span></p>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_960_720.jpg" class="card-img-top" alt="img7">
+                <div class="card-body">
+                    <p>liked by <b>4Geeksacademy, valeriaasalcedoo </b> and <b>100,000 others</b></p>
+                    <p class="card-text">Quien mucho piensa, nada hace.</p>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="card-header">
+                  <p class="card-text"><b>@sawsan_matos</b> <span class="text-muted float-end">29/09</span></p>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_960_720.jpg" class="card-img-top" alt="img8">
+                <div class="card-body">
+                    <p>liked by <b>4Geeksacademy, valeriaasalcedoo </b> and <b>100,000 others</b></p>
+                    <p class="card-text">La excelencia no es un acto, es un hábito.</p>
+                </div>
+            </div>
+
+
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="card-header">
+                  <p class="card-text"><b>@cedavid_</b> <span class="text-muted float-end">28/06</span></p>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2023/11/13/03/07/pond-8384421_960_720.jpg" class="card-img-top" alt="img9">
+                <div class="card-body">
+                    <p>liked by <b>4Geeksacademy, valeriaasalcedoo </b> and <b>100,000 others</b></p>
+                    <p class="card-text">Yo no sufro la locura, la disfruto.</p>
+                </div>
+            </div>
+        </div>
+  <script>
+    function clearTextArea() {
+      document.getElementById("message-text").value = "";
+    }
+  </script>
+</body>
+
+</html>
